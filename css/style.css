@@ -1,0 +1,575 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	/* по умолчанию */
+	/* font-size: 16px;  */
+}
+body {
+	background: #f5f5f5;
+}
+.wrapper {
+}
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+/* ------------------------------ */
+.logoipsum {
+	background: url("../img/logoipsum/BG\ Image.jpg") 100% / cover no-repeat;
+	padding: 26px 0px 312px 0px;
+}
+@media (max-width: 800px) {
+	.logoipsum {
+		background: url("../img/logoipsum/BG\ Image.jpg") 100% / cover no-repeat;
+		padding: 26px 0px 200px 0px;
+	}
+}
+@media (max-width: 600px) {
+	.logoipsum {
+		background: url("../img/logoipsum/BG\ Image.jpg") 100% / cover no-repeat;
+		padding: 26px 0px 120px 0px;
+	}
+}
+.logoipsum__container {
+}
+.logoipsum__header {
+	margin: 0px 0px 126px 0px;
+}
+@media (max-width: 800px) {
+	.logoipsum__header {
+		margin: 0px 0px 50px 0px;
+	}
+}
+.logoipsum__logo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px 0px 27px 0px;
+}
+@media (max-width: 800px) {
+	.logoipsum__logo {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		margin: 0px 0px 27px 0px;
+	}
+}
+.logoipsum__icon {
+	display: flex;
+	align-items: center;
+	gap: 10.65px;
+}
+
+.icon {
+}
+.icon__logo {
+}
+.icon__image {
+	max-height: 24.79px;
+}
+.logoipsum__contacts {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 30px;
+	align-items: center;
+}
+@media (max-width: 610px) {
+	.logoipsum__contacts {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		column-gap: 30px;
+		align-items: flex-start;
+		justify-content: center;
+	}
+}
+.contacts {
+}
+.contacts__item1 {
+	position: relative;
+	padding: 0px 0px 0px 34px;
+	max-width: 206px;
+}
+.contacts__hours::before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../img/logoipsum/access_time_24px.svg") 0 0 no-repeat;
+}
+.contacts__item2 {
+	position: relative;
+	padding: 0px 0px 0px 34px;
+	max-width: 131px;
+}
+@media (max-width: 610px) {
+	.contacts__item2 {
+		position: relative;
+		padding: 0px 0px 0px 34px;
+		max-width: 206px;
+	}
+}
+.contacts__phone::before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url("../img/logoipsum/phone_24px.svg") 0 0 no-repeat;
+}
+.contacts__hours {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 22px;
+	align-items: center;
+	letter-spacing: 0.15px;
+	color: #ffffff;
+}
+.contacts__phone {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 22px;
+	align-items: center;
+	letter-spacing: 0.15px;
+	color: #ffffff;
+}
+
+.contacts__link {
+}
+.contacts__appointment {
+	display: flex;
+	background: #f2726f;
+	border-radius: 8px;
+}
+.appointment-link {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 12px 25px;
+}
+.logoipsum__navi {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 20px 40px;
+	justify-content: space-between;
+}
+@media (max-width: 720px) {
+	.logoipsum__navi {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		background: #ffffff;
+		border-radius: 10px;
+		padding: 20px 40px;
+	}
+}
+.navi {
+}
+.navi__menu {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 37px;
+}
+@media (max-width: 720px) {
+	.navi__menu {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 37px;
+	}
+}
+.navi__link {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.15px;
+	color: #000000;
+}
+.navi__link_after::after {
+	content: "";
+	background: url("../img/logoipsum/expand_more_24px.svg") 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	padding: 0px 17px 0px 0px;
+}
+.navi__icons {
+	display: flex;
+	flex-direction: row;
+	gap: 22px;
+}
+@media (max-width: 720px) {
+	.navi__icons {
+		display: flex;
+		flex-direction: row;
+		gap: 22px;
+		justify-content: space-around;
+	}
+}
+.navi__search {
+}
+.navi__icon1 {
+}
+.navi__basket {
+	position: relative;
+}
+.navi__basket::after {
+	content: "2";
+	position: absolute;
+	width: 16px;
+	font-size: 14px;
+	padding: 1px 3px 5px 6px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #f2726f;
+	top: -6px;
+	right: -5px;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+}
+.navi__icon2 {
+}
+
+.logoipsum__content {
+}
+.logoipsum__title {
+	margin: 0px 0px 48px 0px;
+	max-width: 583px;
+}
+.logoipsum__text {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 56px;
+	color: #ffffff;
+}
+.logoipsum__link {
+}
+.logoipsum__appointment {
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+	background: #f2726f;
+	border-radius: 8px;
+	display: flex;
+	max-width: 193px;
+}
+
+@media (max-width: 1050px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+	.who-we-are {
+		padding: 0px 15px;
+		margin-bottom: 0px;
+	}
+}
+
+@media (max-width: 800px) {
+	[class*="__container"] {
+		max-width: 730px;
+	}
+	.logoipsum__contacts {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		gap: 30px;
+		align-items: center;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 720px) {
+	[class*="__container"] {
+		max-width: 680px;
+	}
+	.navi__icons {
+		display: flex;
+		flex-direction: row;
+		gap: 22px;
+		margin-top: 22px;
+	}
+}
+
+@media (max-width: 600px) {
+	.logoipsum__text {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 40px;
+		color: #ffffff;
+	}
+}
+.who-we-are {
+	padding: 0px 15px;
+	margin-bottom: 150px;
+}
+@media (max-width: 980px) {
+	.who-we-are {
+		padding: 0px 15px;
+		margin-bottom: 0px;
+	}
+}
+.who-we-are__container {
+	position: relative;
+	background: #5d62b5 url("../img/who-we-are/Blob\ 2.png") 0px 250px no-repeat;
+	border-radius: 40px;
+	padding: 95px 87px 0px 87px;
+	margin-top: -75px;
+	max-height: 700px;
+}
+@media (max-width: 767.98px) {
+	.who-we-are__container {
+		position: relative;
+		background: #5d62b5;
+		border-radius: 0px;
+		padding: 95px 87px 0px 87px;
+		margin-top: -75px;
+		max-height: 100%;
+	}
+}
+@media (max-width: 600px) {
+	.who-we-are__container {
+		position: relative;
+		background: #5d62b5;
+		border-radius: 0px;
+		padding: 25px 15px 0px 15px;
+		margin-top: -75px;
+		max-height: 100%;
+	}
+}
+.who-we-are__container::before {
+	position: absolute;
+	content: "";
+	width: 201px;
+	height: 317px;
+	top: -15%;
+	left: 88%;
+	background: url("../img/who-we-are/Stylize\ Circles.png") 0 0 no-repeat;
+}
+@media (max-width: 1215px) {
+	.who-we-are__container::before {
+		display: none;
+	}
+}
+.who-we-are__block {
+	display: flex;
+	flex-direction: column;
+	gap: 33px;
+	margin: 0px 0px 54px 0px;
+}
+@media (max-width: 600px) {
+	.who-we-are__block {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin: 0px 0px 20px 0px;
+	}
+}
+.who-we-are__block2 {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	align-items: center;
+}
+.ho-we-are__icon {
+	width: 17px;
+	height: 16px;
+}
+.who-we-are__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #f5f5f5;
+}
+
+.who-we-are__sub-title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #ffffff;
+	max-width: 583px;
+}
+.who-we-are__text {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #f5f5f5;
+}
+.who-we-are__image {
+	text-align: center;
+}
+.who-we-are__dog {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 40px;
+	max-width: 100%;
+}
+@media (max-width: 600px) {
+	.who-we-are__dog {
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		border-radius: 20px;
+		max-width: 100%;
+	}
+}
+.nemo {
+	padding: 44px 15px 0px 15px;
+	background: url("../img/nemo/Blob\ 3.png") 0 0 no-repeat, url("../img/nemo/Stylize\ Circles.png") 0 122px no-repeat,
+		url("../img/nemo/tennis\ ball.png") 89% 41% no-repeat, url("../img/nemo/Line\ 1.svg") 77% 0 no-repeat, #29c3be;
+}
+
+.nemo__block {
+	display: flex;
+	flex-direction: row;
+	gap: 92px;
+}
+@media (max-width: 1050px) {
+	.nemo {
+		padding: 15px 15px 0px 15px;
+		background: url("../img/nemo/tennis\ ball.png") 89% 41% no-repeat, #29c3be;
+	}
+	.nemo__block {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+	}
+	.nemo__content {
+		display: flex;
+		flex-direction: column;
+		gap: 42px;
+		padding: 15px 15px 15px 15px;
+	}
+}
+@media (max-width: 940px) {
+	.nemo__image {
+		display: none;
+	}
+}
+.nemo__picture {
+	display: flex;
+	align-self: flex-end;
+}
+.nemo__image {
+	width: 100%;
+}
+.nemo__content {
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+	padding: 112px 15px 15px 15px;
+}
+@media (max-width: 800px) {
+	.nemo__content {
+		display: flex;
+		flex-direction: column;
+		gap: 42px;
+		padding: 25px 15px 15px 15px;
+	}
+}
+.nemo__title {
+	max-width: 411px;
+}
+.nemo__text {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #ffffff;
+}
+.nemo__link {
+	margin-bottom: 40px;
+}
+.nemo__appointment {
+	display: flex;
+	background: #f2726f;
+	border-radius: 8px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 12px 25px;
+	max-width: 193px;
+}
